@@ -55,14 +55,9 @@ module.exports = {
 		'operator-linebreak': 0
   },
 	'globals': {
-		'_': true,
 		'$': true,
 		'config': true,
-		'DEBUG': true,
 		'jQuery': true,
-		'initOACommon': true,
-		'gantt': true,
-		'jsMind': true,
         'location': true,
         'WeixinJSBridge': true
 	}

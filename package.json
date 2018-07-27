@@ -10,7 +10,8 @@
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
-    "build4uat": "node build/build4uat.js"
+    "build4uat": "node build/build4uat.js",
+    "all": "node build/build.js && node build/build4uat.js"
   },
   "dependencies": {
     "babel-plugin-lodash": "^3.3.2",
