@@ -59,7 +59,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true,
-      env: envObj.NODE_ENV
+      env: envObj.NODE_ENV,
+      min: ''
     }),
     // copy custom static assets
     new CopyWebpackPlugin([
