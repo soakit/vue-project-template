@@ -26,5 +26,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 * vue cdn(bootcdn挂掉了，需另找cdn)
 * lodash optimize
 * multi environment
-* integrate swiper、vux、less、rem flexible、useful filters、share one loading
+* integrate swiper、vux、less/scss、rem flexible、useful filters、share one loading
 * inline script
