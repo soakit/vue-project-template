@@ -11,6 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
+const HtmlWebpackInlinePlugin = require('html-webpack-inline-plugin');
 
 const env = process.env.NODE_ENV === 'uat'
   ? require('../config/uat.env')
@@ -64,7 +65,10 @@ const webpackConfig = merge(baseWebpackConfig, {
       minify: {
         removeComments: true,
         collapseWhitespace: true,
-        removeAttributeQuotes: true
+        removeAttributeQuotes: true,
+        minifyCSS: true,
+        minifyJS: true,
+        minifyURLs: true
         // more options:
         // https://github.com/kangax/html-minifier#options-quick-reference
       },
@@ -73,6 +77,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       env: env.NODE_ENV,
       min: '.min'
     }),
+    new HtmlWebpackInlinePlugin(),
     // keep module.id stable when vendor modules does not change
     new webpack.HashedModuleIdsPlugin(),
     // enable scope hoisting

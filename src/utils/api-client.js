@@ -128,7 +128,8 @@ function ApiClient() {
 					resolve(json)
 				}
 			}).catch((res) => {
-				console.log('错误信息', res)
+        console.log('错误信息', res)
+				resolve(null)
 			})
 		}))
 }
