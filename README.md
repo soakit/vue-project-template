@@ -22,7 +22,7 @@ npm test
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## Specific
+## Specific(vue-cli@2.x)
 * vue cdn(bootcdn挂掉了，需另找cdn)
 * lodash optimize
 * multi environment
